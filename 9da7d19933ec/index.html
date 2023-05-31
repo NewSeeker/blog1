@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.16.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="已加密。[最后更新时间：2023-05-09 09:45:00]">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20230509-Hexo-从零开始快速搭建个人博客">
+<meta property="og:url" content="http://example.com/9da7d19933ec/index.html">
+<meta property="og:site_name" content="笔记本">
+<meta property="og:description" content="已加密。[最后更新时间：2023-05-09 09:45:00]">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/pic/test.gif">
+<meta property="article:published_time" content="2023-05-09T01:45:00.000Z">
+<meta property="article:modified_time" content="2023-05-30T01:31:44.954Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="博客">
+<meta property="article:tag" content="Hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/pic/test.gif">
+
+
+<link rel="canonical" href="http://example.com/9da7d19933ec/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/9da7d19933ec/","path":"9da7d19933ec/","title":"20230509-Hexo-从零开始快速搭建个人博客"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>20230509-Hexo-从零开始快速搭建个人博客 | 笔记本</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">笔记本</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">生活随笔</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E3%80%8C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E3%80%8D"><span class="nav-number">1.</span> <span class="nav-text">从零开始快速搭建「个人博客」</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub-Hexo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B"><span class="nav-number">2.</span> <span class="nav-text">GitHub + Hexo 搭建个人博客详细教程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E5%89%8D%E8%A8%80"><span class="nav-number">2.1.</span> <span class="nav-text">1、前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E6%8A%80%E6%9C%AF%E9%80%89%E6%8B%A9"><span class="nav-number">2.2.</span> <span class="nav-text">2、技术选择</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D"><span class="nav-number">2.3.</span> <span class="nav-text">3、工具介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-Hexo"><span class="nav-number">2.3.1.</span> <span class="nav-text">3.1 Hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-GitHub"><span class="nav-number">2.3.2.</span> <span class="nav-text">3.2 GitHub</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-GitHub-Pages"><span class="nav-number">2.3.3.</span> <span class="nav-text">3.3 GitHub Pages</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4%E3%80%81%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B"><span class="nav-number">2.4.</span> <span class="nav-text">4、搭建过程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-%E8%8E%B7%E5%BE%97%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E5%9F%9F%E5%90%8D"><span class="nav-number">2.4.1.</span> <span class="nav-text">4.1 获得个人网站域名</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-2-GitHub-%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E4%BB%93%E5%BA%93"><span class="nav-number">2.4.2.</span> <span class="nav-text">4.2 GitHub 创建个人仓库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3-%E5%AE%89%E8%A3%85-Git"><span class="nav-number">2.4.3.</span> <span class="nav-text">4.3 安装 Git</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-4-%E5%AE%89%E8%A3%85-Node-js"><span class="nav-number">2.4.4.</span> <span class="nav-text">4.4 安装 Node.js</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-5-%E5%AE%89%E8%A3%85-Hexo"><span class="nav-number">2.4.5.</span> <span class="nav-text">4.5 安装 Hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-6-%E6%8E%A8%E9%80%81%E7%BD%91%E7%AB%99"><span class="nav-number">2.4.6.</span> <span class="nav-text">4.6 推送网站</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-7-%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D"><span class="nav-number">2.4.7.</span> <span class="nav-text">4.7 绑定域名</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-8-%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98"><span class="nav-number">2.4.8.</span> <span class="nav-text">4.8 更换主题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-9-%E5%88%9D%E8%AF%86-MarkDown-%E8%AF%AD%E6%B3%95"><span class="nav-number">2.4.9.</span> <span class="nav-text">4.9 初识 MarkDown 语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-10-%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0"><span class="nav-number">2.4.10.</span> <span class="nav-text">4.10 发布文章</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-11-%E5%AF%BB%E6%89%BE%E5%9B%BE%E5%BA%8A"><span class="nav-number">2.4.11.</span> <span class="nav-text">4.11 寻找图床</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-12-%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AE%BE%E7%BD%AE"><span class="nav-number">2.4.12.</span> <span class="nav-text">4.12 个性化设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-13-%E5%85%B6%E4%BB%96"><span class="nav-number">2.4.13.</span> <span class="nav-text">4.13 其他</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">John Doe</p>
+  <div class="site-description" itemprop="description">生活随笔</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/9da7d19933ec/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="笔记本">
+      <meta itemprop="description" content="生活随笔">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="20230509-Hexo-从零开始快速搭建个人博客 | 笔记本">
+      <meta itemprop="description" content="已加密。[最后更新时间：2023-05-09 09:45:00]">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20230509-Hexo-从零开始快速搭建个人博客
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-05-09 09:45:00" itemprop="dateCreated datePublished" datetime="2023-05-09T09:45:00+08:00">2023-05-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-05-30 09:31:44" itemprop="dateModified" datetime="2023-05-30T09:31:44+08:00">2023-05-30</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF%E6%95%99%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">技术教程</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">已加密。[最后更新时间：2023-05-09 09:45:00]</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="从零开始快速搭建「个人博客」"><a href="#从零开始快速搭建「个人博客」" class="headerlink" title="从零开始快速搭建「个人博客」"></a>从零开始快速搭建「个人博客」</h2><p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+</more>
+
+<h2 id="GitHub-Hexo-搭建个人博客详细教程"><a href="#GitHub-Hexo-搭建个人博客详细教程" class="headerlink" title="GitHub + Hexo 搭建个人博客详细教程"></a>GitHub + Hexo 搭建个人博客详细教程</h2><p>[TOC]</p>
+<h3 id="1、前言"><a href="#1、前言" class="headerlink" title="1、前言"></a>1、前言</h3><p>用户搭建一个属于自己的个人网站，分享信息更加便捷。本文详细记录了搭建步骤，享受从 0 到 1 的过程。由于技术更新较快，很多同类文档已经失去时效性，本文基于当前最新版本重新搭建。</p>
+<h3 id="2、技术选择"><a href="#2、技术选择" class="headerlink" title="2、技术选择"></a>2、技术选择</h3><p>通常来说，建立博客的通常渠道包括以下 3 种：</p>
+<ul>
+<li>博客平台注册，如：博客园、CSDN、新浪博客、知乎、简书、掘金等</li>
+<li>博客框架搭建，如：WordPress、Jekyll、Hexo 等</li>
+<li>重新造轮子，代码实现</li>
+</ul>
+<p>其中，第一种最简单，也最受限，容易被删帖删号禁言；第二种稍复杂，但可定制化较高，是很多人的选择；最后一种，高情商表达是重复造轮子，锻炼编程能力，低情商表达是没有专注博客写作，本末倒置。本文选择的是第二种：既不受限，难度也不大。</p>
+<p>为什么选择 GitHub 和 Hexo？</p>
+<ul>
+<li>纯静态博客，部署简单、成本低廉、运行优化非常高效。</li>
+<li>Hexo 静态博客框架可以在云端，也可以在本地电脑上甚至手机上。</li>
+<li>Hexo 框架的博客网站没有网站后台，不存在后台安全漏洞的问题。</li>
+<li>因为是纯静态的，几乎所有的 CDN 服务都可以完美的加速提升浏览速度。</li>
+<li>搜索引擎对纯静态网站有天然的青睐度，收录、权重优先权明显。</li>
+<li>纯静态网站会让网络攻击成本大大的增加，也就是说纯静态网站被攻击的可能性更低了。</li>
+</ul>
+<h3 id="3、工具介绍"><a href="#3、工具介绍" class="headerlink" title="3、工具介绍"></a>3、工具介绍</h3><h4 id="3-1-Hexo"><a href="#3-1-Hexo" class="headerlink" title="3.1 Hexo"></a>3.1 Hexo</h4><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<h4 id="3-2-GitHub"><a href="#3-2-GitHub" class="headerlink" title="3.2 GitHub"></a>3.2 GitHub</h4><p>GitHub 是一个代码托管网站和社交编程网站。</p>
+<h4 id="3-3-GitHub-Pages"><a href="#3-3-GitHub-Pages" class="headerlink" title="3.3 GitHub Pages"></a>3.3 GitHub Pages</h4><p>GitHub Pages 是用来托管 GitHub 上静态网页的免费站点。</p>
+<p>简单介绍就是：利用 Hexo（word）在个人电脑上生成博客文档，将其传输到 Github（微博）托管代码，再由 Github（微博）提供的 Github Pages（微博文章）服务将博客部署到网上，这样你就通过手机或者电脑浏览博客。</p>
+<h3 id="4、搭建过程"><a href="#4、搭建过程" class="headerlink" title="4、搭建过程"></a>4、搭建过程</h3><p>下面正式从零开始搭建个人博客，主要分为一下几个步骤。</p>
+<ul>
+<li>获得个人网站域名</li>
+<li>GitHub 创建个人仓库</li>
+<li>安装 Git</li>
+<li>安装 Node.js</li>
+<li>安装 Hexo</li>
+<li>推送网站</li>
+<li>绑定域名</li>
+<li>更换主题</li>
+<li>初识 MarkDown 语法</li>
+<li>发布文章</li>
+<li>寻找图床</li>
+<li>个性化设置</li>
+<li>其他</li>
+<li>附录</li>
+</ul>
+<h4 id="4-1-获得个人网站域名"><a href="#4-1-获得个人网站域名" class="headerlink" title="4.1 获得个人网站域名"></a>4.1 获得个人网站域名</h4><p>非必要，待以后补充。</p>
+<h4 id="4-2-GitHub-创建个人仓库"><a href="#4-2-GitHub-创建个人仓库" class="headerlink" title="4.2 GitHub 创建个人仓库"></a>4.2 GitHub 创建个人仓库</h4><p>待以后补充。</p>
+<h4 id="4-3-安装-Git"><a href="#4-3-安装-Git" class="headerlink" title="4.3 安装 Git"></a>4.3 安装 Git</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># git的配置列表</span></span><br><span class="line">git config --list</span><br><span class="line">git config --global user.name <span class="string">&quot;你的GitHub用户名&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;你的GitHub注册邮箱&quot;</span></span><br><span class="line"><span class="comment"># 生成ssh密钥文件</span></span><br><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;你的GitHub注册邮箱&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/./pic/test.gif" alt="操作说明"></p>
+<h4 id="4-4-安装-Node-js"><a href="#4-4-安装-Node-js" class="headerlink" title="4.4 安装 Node.js"></a>4.4 安装 Node.js</h4><p>注意配置信息，配置 npm 源。</p>
+<h4 id="4-5-安装-Hexo"><a href="#4-5-安装-Hexo" class="headerlink" title="4.5 安装 Hexo"></a>4.5 安装 Hexo</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli --registry=https://registry.npm.taobao.org</span><br><span class="line">hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">hexo new test_my_site</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<h4 id="4-6-推送网站"><a href="#4-6-推送网站" class="headerlink" title="4.6 推送网站"></a>4.6 推送网站</h4><p>手工推送，消除 git push 信息。</p>
+<h4 id="4-7-绑定域名"><a href="#4-7-绑定域名" class="headerlink" title="4.7 绑定域名"></a>4.7 绑定域名</h4><p>待以后补充。</p>
+<h4 id="4-8-更换主题"><a href="#4-8-更换主题" class="headerlink" title="4.8 更换主题"></a>4.8 更换主题</h4><p>选择 NexT，简洁清晰。</p>
+<h4 id="4-9-初识-MarkDown-语法"><a href="#4-9-初识-MarkDown-语法" class="headerlink" title="4.9 初识 MarkDown 语法"></a>4.9 初识 MarkDown 语法</h4><p>待以后补充。</p>
+<h4 id="4-10-发布文章"><a href="#4-10-发布文章" class="headerlink" title="4.10 发布文章"></a>4.10 发布文章</h4><p>通过带有预览样式的 Markdown 编辑器实时预览书写的博文样式，也可以通过命令 hexo s –debug 在本地浏览器的 localhost:4000 预览博文效果。写好博文并且样式无误后，通过 hexo g、hexo d 生成、部署网页。随后可以在浏览器中输入域名浏览。</p>
+<h4 id="4-11-寻找图床"><a href="#4-11-寻找图床" class="headerlink" title="4.11 寻找图床"></a>4.11 寻找图床</h4><p>注册免费图床，或者 base64 解决。</p>
+<h4 id="4-12-个性化设置"><a href="#4-12-个性化设置" class="headerlink" title="4.12 个性化设置"></a>4.12 个性化设置</h4><p>rss 配置、404 配置、加密配置、打赏、评论系统</p>
+<h4 id="4-13-其他"><a href="#4-13-其他" class="headerlink" title="4.13 其他"></a>4.13 其他</h4><p>终于写到这里了，也算是基本圆满完成了我的写作初衷，总结自己的一些经验，分享一些有趣的东西，不过脖子也是僵硬的受不了。我知道很多人想要建立自己的个人网站却一直没有付诸行动，希望这篇文章能给你一点点灵感与想法，just do it。本文是 windows 平台的搭建过程，其他平台可以参看相关资料，也有很多其他优秀的博客框架值得学习。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag"># 博客</a>
+              <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+            </div>
+            <div class="post-nav-item">
+                <a href="/830e6ef50f55/" rel="next" title="Hello World">
+                  Hello World <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
